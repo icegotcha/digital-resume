@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let name: string = 'Foo';
-	export let nickname: string = '';
+	export let name: string = '...';
+	export let nickname: string = '...';
 	export let phone: string = '';
 	export let email: string = '';
 	export let github: string = '';
