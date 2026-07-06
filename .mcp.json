@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "playwright": {
+      "command": "npx",
+      "args": ["-y", "@playwright/mcp@latest"],
+      "env": {
+        "PLAYWRIGHT_MCP_EXECUTABLE_PATH": "/home/icegotcha/.cache/ms-playwright/chromium-1228/chrome-linux64/chrome",
+        "PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD": "1",
+        "PLAYWRIGHT_MCP_TIMEOUT_NAVIGATION": "20000"
+      }
+    }
+  }
+}
