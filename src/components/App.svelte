@@ -56,8 +56,8 @@
 			<ul class="text-left list-disc pl-8">
 				{#each technologies as tech}
 					<Hideable>
-						<li>
-							<span class="w-28 inline-block">{tech.section}</span>
+						<li class="flex gap-x-4">
+							<span class="w-48 shrink-0">{tech.section}</span>
 							<span>{tech.details}</span>
 						</li>
 					</Hideable>
