@@ -12,35 +12,77 @@
 	"projects": [
 		{
 			"name": "Knowlats.dev",
-			"details": "Personal knowledge base built with Astro, Svelte, TailwindCSS, and Markdown.",
+			"details": "Personal knowledge base platform built with Astro, Svelte, TailwindCSS, and Markdown.",
 			"url": "knowlats.dev",
+			"hide": false
+		},
+		{
+			"name": "Yangyuen",
+			"details": "Sustainability engagement platform supporting ESG activities, rewards, and digital tokens. Developed internal backoffice systems for workspace management, events, health and engagement activities, news content, token management, and platform operations using Next.js and Web3 integrations.",
+			"url": "yangyuen.com",
+			"hide": false
+		},
+		{
+			"name": "Bitkub Blockchain Technology",
+			"details": "Corporate website rebuilt with Next.js to support product launches such as THBK. Developed reusable UI components, responsive layouts, and CSS animations to enhance product storytelling.",
+			"url": "bitkubblockchain.com",
+			"hide": false
+		},
+		{
+			"name": "Bitkub NFT Marketplace & Creative Studio",
+			"details": "NFT marketplace ecosystem supporting NFT trading, gashapon, and digital asset management. Developed Creative Studio and internal backoffice systems using Next.js, GraphQL, Web3, React Hook Form, and Zod validation to support asset creation workflows, approval processes, marketplace operations, and reporting.",
+			"url": "bitkubnft.com",
+			"hide": false
+		},
+		{
+			"name": "Bitkub NEXT (KUB Wallet)",
+			"details": "Cryptocurrency wallet application supporting digital assets and NFTs. Developed authentication flows, improved user experience, and integrated secure frontend features using React, RTK Query, and REST APIs.",
+			"url": "kubwallet.com",
+			"hide": false
+		},
+		{
+			"name": "MEA EV",
+			"details": "EV charging reservation system built with Java Spring Boot microservices architecture consisting of 10+ services. Developed authentication and notification services with Keycloak, Firebase Cloud Messaging (FCM), and Kafka-based event-driven communication.",
+			"url": "www.mea.or.th/our-services/mea-service/mobile-application/mea-ev",
 			"hide": false
 		}
 	],
 	"technologies": [
 		{
 			"section": "Languages:",
-			"details": "JavaScript, TypeScript, Node.js, Java, SQL"
+			"details": "JavaScript / TypeScript, Java, SQL"
 		},
 		{
-			"section": "Frameworks:",
-			"details": "Next.js, React.js, Astro, Svelte.js, Truffle.js, Nest.js, TailwindCSS, Jest, Spring Boot"
+			"section": "Frontend:",
+			"details": "React, Next.js, Svelte, TailwindCSS, Redux Toolkit, RTK Query, React Hook Form, Styled Components, Ant Design, Storybook"
 		},
 		{
-			"section": "Databases:",
-			"details": "MySQL, PostgreSQL, GraphQL, Redis"
+			"section": "Backend:",
+			"details": "Node.js, Express.js, Nest.js, Spring Boot, GraphQL, MySQL, PostgreSQL, Redis, OpenAPI / Swagger"
 		},
 		{
-			"section": "OS:",
-			"details": "Windows, Linux (Ubuntu, Arch Linux), MacOS"
+			"section": "Testing:",
+			"details": "Vitest, Jest, React Testing Library, Mocha, Chai"
 		},
 		{
-			"section": "Tools:",
-			"details": "Git, Docker, RabbitMQ, Kafka, Firebase, Keycloak, ORY, Storybook, Ant Design"
+			"section": "Messaging & Streaming:",
+			"details": "RabbitMQ, Apache Kafka, Firebase Cloud Messaging"
 		},
 		{
-			"section": "Other:",
-			"details": "Vercel, CloudFlare, AWS S3, Web3, Ethereum (Blockchain)"
+			"section": "Infrastructure:",
+			"details": "Docker, Git, GitHub Actions, Vercel, Cloudflare, AWS S3"
+		},
+		{
+			"section": "Security/IAM:",
+			"details": " Keycloak, ORY Kratos, ORY Hydra"
+		},
+		{
+			"section": "Blockchain:",
+			"details": "Ethereum, Solidity, Web3.js, Ethers.js, Truffle.js, Viem"
+		},
+		{
+			"section": "AI Tools:",
+			"details": "Claude Code, Github Copilot, Oz Agent (Warp Terminal), CodeRabbit (Code Review)"
 		}
 	],
 	"workExperiences": [
@@ -50,14 +92,12 @@
 			"url": "https://www.bitkubblockchain.com",
 			"years": ["2022", "2026"],
 			"details": [
-				"Led 2 junior frontend developers to build a new corporate website (bitkubblockchain.com) with interactive public-facing product and brand pages.",
-				"Led frontend development with a junior developer to deliver an internal backoffice platform for Yangyuen (yangyuen.com), an ESG and health engagement platform, supporting workspace, event, challenge, and blockchain token management.",
-				"Collaborated with 2 frontend developers to build an internal back-office platform for Bitkub NFT marketplace (bitkubnft.com) and Creative Studio (studio.bitkubnft.com), supporting store, NFT, and gashapon management workflows.",
-				"Enhanced Creative Studio by integrating backend data via GraphQL and implementing blockchain interactions with Ethers.js.",
-				"Implemented authentication flows for Bitkub NEXT, currently rebranded as KUB Wallet (kubwallet.com), enabling secure access to token and collectible NFT management on KUB Chain.",
-				"Researched and experimented with ORY ecosystem (Kratos, Hydra) for authentication and authorization solutions.",
-				"Built and maintained Docker environments for application testing, ensuring service compatibility and deployment readiness before handoff to Infrastructure/DevOps teams.",
-				"Architected and built React and Next.js applications, establishing scalable UI patterns with Styled Components, Ant Design, and React Hook Form, and making UI documentation using Storybook."
+				"Led 2 junior frontend developers and owned frontend delivery for a new corporate website, supporting new product launches such as THBK through improved product storytelling, interactive pages, animations, and reusable UI components.",
+				"Established reusable React/Next.js project structures and UI component systems with Atomic Design principles and Storybook, creating a maintainable foundation for multiple products.",
+				"Improved operational efficiency by redesigning complex workflows across customer-facing applications and internal backoffice systems, while developing scalable React interfaces with form management, API integrations, and blockchain connectivity through GraphQL, REST APIs, RTK Query, and Web3.",
+				"Established Docker-based development environments to improve local testing, service compatibility validation, and smoother DevOps/Infrastructure handoff.",
+				"Implemented and enhanced authentication flows for Bitkub NEXT (currently rebranded as KUB Wallet), introducing more accessible login options, modernizing the user experience, improving performance, and applying secure handling practices aligned with OWASP guidelines.",
+				"Evaluated ORY Kratos and Hydra as part of a security R&D initiative, assessing compliance, scalability, and integration complexity for enterprise-grade access control."
 			]
 		},
 		{
@@ -66,10 +106,9 @@
 			"url": "https://www.linkedin.com/company/enter-corporation-co.-ltd./",
 			"years": ["2021", "2022"],
 			"details": [
-				"Developed, and maintained 10+ microservices for MEA EV, an EV charging station reservation platform, using Java and Spring built with Apache Maven. Delivered core capabilities including PostgreSQL Database, Firebase notifications, Kafka-based stream processing, Keycloak authentication, and React-based login frontend integration.",
-				"Developed an authentication service based on protocol: OpenID Connect using Keycloak",
-				"Researched and introduced tools and technologies to development teams, such as OAuth 2.0, OpenID Connect (OIDC), Keycloak, Mockito (Java mock objects library)",
-				"Improved engineering practices by documenting APIs with Swagger and introducing tools such as Keycloak, OpenAPI to support team adoption and integration quality"
+				"Architected, developed, and maintained Java/Spring microservices for the MEA EV charging station platform. Designed the core backend infrastructure utilizing Apache Maven, PostgreSQL, Kafka-based stream processing, and Keycloak to ensure high availability and robust authentication.",
+				"Researched and introduced core security and testing technologies to the development team, including OAuth 2.0, OpenID Connect (OIDC), Keycloak, and Mockito to elevate identity management and unit testing standards.",
+				"Elevated engineering practices by standardizing API documentation with Swagger/OpenAPI, significantly improving cross-team integration quality."
 			]
 		},
 		{
@@ -78,20 +117,20 @@
 			"url": "https://www.linkedin.com/company/enter-corporation-co.-ltd./",
 			"years": ["2018", "2021"],
 			"details": [
-				"Developed a proof-of-concept electricity market platform integrated with a blockchain network for usage tracking and token management using Nest.js and Web3.js, including PostgreSQL Database. I developed smart contracts using Solidity and deployed to private blockchain server using Truffle.js. Run unit testing with Mocha, and Chai.",
-				"Developed a backend service for a small digital certification website worked with a private blockchain network using JavaScript with frameworks: Express.js. I developed and deployed smart contracts running on private Ethereum servers using Solidity through Remix IDE (remix.ethereum.org)",
+				"Developed a proof-of-concept electricity market platform integrated with a blockchain network for usage tracking and token management using Nest.js and Web3.js, including PostgreSQL Database. Developed smart contracts using Solidity and deployed to private blockchain server using Truffle.js. Implemented unit testing with Mocha and Chai.",
+				"Developed a backend service for a small digital certification website worked with a private blockchain network using JavaScript with frameworks: Express.js. Developed and deployed smart contracts running on private Ethereum servers using Solidity through Remix IDE (remix.ethereum.org)",
 				"Developed a small part of website using PHP with Laravel Framework, and MySQL Database for a client project."
 			]
 		}
 	],
 	"educations": [
 		{
-		 	"head": "B.Sc. (Computer Science)",
-			"details": "King Mongkut's University of Technology North Bangkok, TH. 20014-2018 (GPA 3.56)"
+		    "head": "B.Sc. (Computer Science)",
+			"details": "King Mongkut's University of Technology North Bangkok, TH. 2014-2018 (GPA 3.56)"
 		}
 	], 
 	"interests": [
-		"Area: Creativity, Visualization, Drawing, Painting, Writing, Psychology, Fantasy Fictions"
+		"Area: Creative Writing, Digital Art, Psychology, Storytelling, Visual Design"
 	],
 	"resumeUrl": {
 		"sourceLink": "https://github.com/icegotcha/digital-resume",
