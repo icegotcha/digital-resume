@@ -1,0 +1,49 @@
+{
+	"intro": {
+		"name": "John Doe",
+		"nickname": "John",
+		"phone": "+66 123 4567",
+		"email": "john_doe@example.com",
+		"github": "john_doe_gh",
+		"linkedin": "john_doe_li",
+		"location": "Bangkok, Thailand",
+		"website": "example.com"
+	},
+	"projects": [
+		{
+			"name": "Example Project",
+			"details": "Sample project for integration tests",
+			"url": "johndoe.com/project",
+			"hide": false
+		}
+	],
+	"technologies": [
+		{
+			"section": "Frontend:",
+			"details": "Svelte, TypeScript"
+		}
+	],
+	"workExperiences": [
+		{
+			"position": "Web Developer",
+			"company": "My Company",
+			"url": "https://example.com",
+			"years": ["2019", "2020"],
+			"details": [
+				"Developed and maintained web applications using React and Node.js.",
+				"Collaborated with cross-functional teams to deliver high-quality software."
+			]
+		}
+	],
+	"educations": [
+		{
+			"head": "B.Sc. Computer Science",
+			"details": "Example University"
+		}
+	],
+	"interests": ["Testing"],
+	"resumeUrl": {
+		"sourceLink": "https://github.com/example/resume",
+		"fullVersionLink": "https://resume.example.com"
+	}
+}

@@ -1,26 +1,15 @@
-import Work from "../src/Work.svelte"
-import { render } from "@testing-library/svelte"
+import { expect, test } from '@playwright/test';
 
-describe("Work Component", () => {
-  test("it exists", async () => {
-    const { component } = render(Work, {})
+test.describe('Work Experience section', () => {
+	test('renders work history from profile data', async ({ page }) => {
+		await page.goto('/');
 
-    expect(component).toBeDefined()
-  })
-
-  test("it renders the info from attributes", async () => {
-    const { getByText } = render(Work, {
-      position: "Web Developer",
-      company: "My Company",
-      url: "https://example.com",
-      years: [2019, 2021],
-      details: ["Developed A", "Lead team B"],
-    })
-
-    expect(getByText("Web Developer")).toBeInTheDocument()
-    expect(getByText("My Company")).toBeInTheDocument()
-    expect(getByText("2019-2021")).toBeInTheDocument()
-    expect(getByText("Developed A")).toBeInTheDocument()
-    expect(getByText("Lead team B")).toBeInTheDocument()
-  })
-})
+		await expect(page.getByRole('heading', { name: 'Work Experience' })).toBeVisible();
+		await expect(page.getByText('Web Developer')).toBeVisible();
+		await expect(page.getByRole('link', { name: 'My Company' })).toBeVisible();
+		await expect(page.getByText('2019-2020')).toBeVisible();
+		await expect(
+			page.getByText('Developed and maintained web applications using React and Node.js.')
+		).toBeVisible();
+	});
+});
