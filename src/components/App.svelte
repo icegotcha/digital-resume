@@ -1,14 +1,14 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { page } from '$app/stores';
 	import type { IProfileResp } from '../types';
 	import Hideable from './Hideable.svelte';
 	import Intro from './Intro.svelte';
 	import Kofi from './Kofi.svelte';
 	import Work from './Work.svelte';
-
 	let profile: IProfileResp;
 
-	$: dataLink = `${sourceLink}/blob/main/static/data/profile.json`;
+	$: profile = $page.data.profile;
+
 	$: ({
 		intro = {} as IProfileResp['intro'],
 		projects = [],
@@ -18,13 +18,6 @@
 		interests = [],
 		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
 	} = profile || {});
-
-	onMount(async () => (profile = await fetchResumeProfile()));
-
-	async function fetchResumeProfile() {
-		const resp = await fetch('/data/profile.json');
-		return await resp.json();
-	}
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->
@@ -43,7 +36,6 @@
 	</p>
 	<p>You can click at any sections or lines hide some information before printing.</p>
 	<a href={sourceLink} target="_blank" rel="noopener">[Source]</a>
-	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
 </header>
 
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
